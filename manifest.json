@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Bypass",
+  "version": "1.0.0",
+  "description": "Bypass para carregar conteúdos",
+  "content_scripts": [
+    {
+      "js": [
+        "bypass.js",
+        "youtube.js",
+        "main.js"
+      ],
+      "matches": [
+        "*://*.youtube.com/watch?*"
+      ]
+    }
+  ]
+}
