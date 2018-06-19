@@ -24,7 +24,7 @@ class Youtube extends Bypass {
             src = VIDEO_SRC + this.getParam('v') + '?' + AUTOPLAY_PARAM;
             console.log("Video:", src);
         }
-        let iframe = this.createIframe(src, 640, 360);
+        let iframe = new Iframe(src, 640, 360).createTag();
         iframe.setAttribute("allowfullscreen", "allowfullscreen");
         return iframe;
     }

@@ -8,16 +8,7 @@ class Bypass {
     getParam(param) {
         let params = (new URL(this.url)).searchParams;
         return params.get(param);
-    }
-
-    createIframe(src, width, height) {
-        let iframe = document.createElement("iframe");
-        iframe.src = src;
-        iframe.setAttribute("width", width);
-        iframe.setAttribute("height", height);
-        iframe.setAttribute("frameborder", "0");
-        return iframe;
-    }
+    }   
 
     getIframe() { };
 
@@ -32,7 +23,7 @@ class Bypass {
         parent.replaceChild(this.getIframe(), element);
     }
 
-    StartWithContent(selector) {
+    startWithContent(selector) {
         let element = getElement(selector);
         element.innerHTML = '';
         element.appendChild(this.getIframe());

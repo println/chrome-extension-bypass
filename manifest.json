@@ -6,12 +6,17 @@
   "content_scripts": [
     {
       "js": [
+        "tags/tag.js",
+        "tags/iframe.js",
+        "tags/audio.js",
         "bypass.js",
         "youtube.js",
+        "radio-cidade.js",
         "main.js"
       ],
       "matches": [
-        "*://*.youtube.com/watch?*"
+        "*://*.youtube.com/watch?*",
+        "*://*.radiocidade.fm/*"
       ]
     }
   ]
