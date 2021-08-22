@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "Bypass",
   "version": "2.0.0",
   "description": "Bypass para carregar conteúdos ocultos",
