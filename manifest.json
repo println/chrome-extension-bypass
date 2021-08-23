@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "Bypass",
-  "version": "2.0.0",
+  "name": "Canvas Bypass",
+  "version": "2.0.1",
   "description": "Bypass para carregar conteúdos ocultos",
   "content_scripts": [
     {
