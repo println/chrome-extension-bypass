@@ -6,10 +6,15 @@
   "content_scripts": [
     {
       "js": [
+        "functions/anonymize.js",
+        "functions/button.js",
+        "handlers/submissions.js",
+        "handlers/quizzes.js",
         "main.js"
       ],
       "matches": [
-        "*://pucminas.instructure.com/courses/*/assignments/*/submissions/*"
+        "*://*.instructure.com/courses/*/assignments/*/submissions/*",
+        "*://*.instructure.com/courses/*/quizzes/*"
       ],
       "run_at": "document_end"
     }
