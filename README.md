@@ -1,26 +1,30 @@
 # Canvas Bypass
 A browser extension
 
-# Sobre
+## Sobre
 
-> O **Canvas Bypass** é uma extensão de navegador com a finalidade de auxiliar usuários do ***Canvas*** imprimir testes e provas  realizadas.
+> O **Canvas Bypass** é uma extensão para navegadores com a finalidade de auxiliar usuários (alunos) que utilizam a plataforma ***Canvas*** no processo de imprimir avaliações concluídas, no caso, os testes e provas antigos.
+
+## Download
+1. [Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/canvas-bypass/)
+2. [Chrome](https://github.com/println/chrome-extension-bypass#como-instalar-a-extens%C3%A3o) 
 
 ## Compatiblidade
 * Chrome
 * Firefox
 * Outros (não testados) 
 
-## Aspectos gerais
+## Aspectos gerais da extensões
 
-* Manipula `tags` html em:
+* Manipulação de `tags` HTML em:
   * `*.instructure.com/courses/*/assignments/*/submissions/*`
   * `*.instructure.com/courses/*/quizzes/*`
-* Adiciona um botão para anonimizar testes e provas
+* Adiciona um botão para remover dados pessoais (anonimizar) e cabeçalho dos testes e provas
 
 ***
 ## Instalação e Utilização
 
-A utilização da extensão é bem simples. Basta instalar, navegar até o teste ou prova e acionar o **botão verde** para anonimizar o gabarito, deixando apenas as questões.
+A utilização da extensão é simples. Basta instalar, navegar até o teste/prova e acionar o **botão verde** para anonimizar o conteúdo, deixando apenas as questões.
 
 > ### Via Testes
 > ![Via Testes/Provas](https://raw.githubusercontent.com/println/chrome-extension-bypass/master/.doc/via-testes.png)
@@ -28,8 +32,8 @@ A utilização da extensão é bem simples. Basta instalar, navegar até o teste
 > ### Via Notas
 > ![Via Notas](https://raw.githubusercontent.com/println/chrome-extension-bypass/master/.doc/via-notas.png)
 
-### Como instalar
-A instalação recomendada é via modo desenvolvedor, mas é possível usar o binário do Chrome ou Firefox.
+### Como instalar a extensão
+A instalação recomendada é via `modo desenvolvedor` do navegador, mas é possível usar o binário do Chrome ou Firefox(via loja ou instalado manualmente).
 
 #### Usar em modo desenvolvedor
 1. Obtenha o código desse repositório
@@ -49,7 +53,11 @@ A instalação recomendada é via modo desenvolvedor, mas é possível usar o bi
 
 > A extensão do Firefox é temporária, removida após fechar o navegador 
 
-#### Usar via "binário"
+#### [Usar via "binário"](https://github.com/println/chrome-extension-bypass/releases)
 Siga para a seção de [releases do github](https://github.com/println/chrome-extension-bypass/releases) e escolha a última versão da extensão do Firefox(.xpi) ou Chrome(.crx).
 
 > A extensão do Chrome deve ser instalada como uma `external extension`
+
+#### [Loja do Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/canvas-bypass/)
+É possível obter a extensão do Firefox via loja oficial [canvas-bypass](https://addons.mozilla.org/pt-BR/firefox/addon/canvas-bypass/). Pode ocorrer diferença nas versões por conta do tempo de aprovação.
+
