@@ -1,9 +1,14 @@
-# Canvas Bypass
+# Canvas Print Preparer 
 A browser extension
 
 ## Sobre
 
-> O **Canvas Bypass** é uma extensão para navegadores com a finalidade de auxiliar usuários (alunos) que utilizam a plataforma ***Canvas*** no processo de imprimir avaliações concluídas, no caso, os testes e provas antigos.
+O **Canvas Print Preparer** prepara testes e provas para impressão com as seguintes caracteristicas:
+1. Remove dados pessoais dos testes e provas concluídos, ex: nome e data da avaliação
+1. Transforma provas em gabaritos destacando respostas certas e removendo repostas erradas
+1. Remove as setas de indicação `correto` e `incorreto`
+
+> O ***Canvas*** é uma plataforma de ensino EAD bastante utilizada no mundo inteiro
 
 ## Download
 1. [Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/canvas-bypass/)

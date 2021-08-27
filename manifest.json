@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Canvas Bypass",
+  "name": "Canvas Print Preparer",
   "version": "2.0.1",
-  "description": "Bypass para carregar conteúdos ocultos",
+  "description": "Prepara testes e provas para impressão",
   "content_scripts": [
     {
       "js": [
