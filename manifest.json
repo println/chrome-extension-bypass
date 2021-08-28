@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Canvas Print Preparer",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Prepara testes e provas do Canvas para impressão",
   "content_scripts": [
     {

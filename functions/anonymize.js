@@ -32,3 +32,29 @@ function anonymize(newWindow) {
     removeUserAnswers();
     formatAnswers();
 }
+
+function anonymizeAsync(newWindow) {
+    var isLoaded = false;
+    newWindow.onload = () => {
+        isLoaded = true;
+        anonymize(newWindow);
+    }
+
+    var times = 0;
+    var maxTimes = 10;
+    var interval = setInterval(() => {
+        if (isLoaded) {
+            window.console.log("Discard Compatibility...");
+            clearInterval(interval);
+        } else if (newWindow.document.readyState == "complete") {
+            window.console.log("Apply Compatibility...");
+            clearInterval(interval);
+            anonymize(newWindow);
+        }
+
+        if (times++ >= maxTimes) {
+            window.console.log("Expires...");
+            clearInterval(interval);
+        }
+    }, 500);
+}
