@@ -1,16 +1,15 @@
 'use strict';
 
-class Quizzes {
+class QuizTake {
     constructor(anonymizeFn, buttonFactoryFn) {
         this.anonymize = anonymizeFn;
         this.buttonFactory = buttonFactoryFn;
     }
 
     embedButton() {
-        let elTargetAnchor = document.querySelector("#quiz_title");
-        let elTarget = elTargetAnchor.parentNode;
-        let label = "Anonimizar Avaliação";
+        let elTarget = document.querySelector("#content .quiz-header");
+        let label = "Preparar avaliação para impressão";
         let elButton = this.buttonFactory(() => this.anonymize(window), label)
-        elTarget.insertBefore(elButton, elTargetAnchor);
+        elTarget.prepend(elButton);
     }
 }

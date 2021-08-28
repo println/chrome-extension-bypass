@@ -2,13 +2,13 @@
 var handler = null;
 
 if (document.location.href.includes("submissions")) {
-    handler = new Submissions(anonymize, createButton);
+    handler = new Submission(anonymize, createButton);
+} else if (document.location.href.match(/quizzes\/.+\/take/)) {
+    handler = new QuizTake(anonymize, createButton);
 } else if (document.location.href.includes("quizzes")) {
-    handler = new Quizzes(anonymize, createButton);
+    handler = new Quiz(anonymize, createButton);
 }
 
-if(handler) {
+if (handler) {
     handler.embedButton();
 }
-
-

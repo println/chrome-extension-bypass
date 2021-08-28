@@ -1,6 +1,6 @@
 'use strict';
 
-class Submissions {
+class Submission {
     constructor(anonymizeFn, buttonFactoryFn) {
         this.anonymize = anonymizeFn;
         this.buttonFactory = buttonFactoryFn;
@@ -40,7 +40,7 @@ class Submissions {
 
     embedButton() {
         let elTarget = document.querySelector("#content>.submission-details-header");
-        let label = "Extrair Prova";
+        let label = "Extrair gabarito para impressão";
         let elButton = this.buttonFactory(() => this.extract(), label)
         elTarget.append(elButton);
     }

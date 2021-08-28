@@ -1,19 +1,21 @@
 {
   "manifest_version": 2,
   "name": "Canvas Print Preparer",
-  "version": "2.0.1",
-  "description": "Prepara testes e provas para impressão",
+  "version": "2.0.2",
+  "description": "Prepara testes e provas do Canvas para impressão",
   "content_scripts": [
     {
       "js": [
         "functions/anonymize.js",
         "functions/button.js",
-        "handlers/submissions.js",
-        "handlers/quizzes.js",
+        "handlers/submission.js",
+        "handlers/quiz.js",
+        "handlers/quiz-take.js",
         "main.js"
       ],
       "matches": [
         "*://*.instructure.com/courses/*/assignments/*/submissions/*",
+        "*://*.instructure.com/courses/*/quizzes/*/take",
         "*://*.instructure.com/courses/*/quizzes/*"
       ],
       "run_at": "document_end"
