@@ -12,7 +12,23 @@ O **Canvas Print Preparer** prepara testes e provas para impressão com as segui
 
 ## Download
 1. [Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/canvas-bypass/)
-2. [Chrome](https://github.com/println/chrome-extension-bypass#como-instalar-a-extens%C3%A3o) 
+2. [Chrome](https://github.com/println/chrome-extension-bypass#como-instalar-a-extens%C3%A3o)
+
+## Como usar
+1. Instalar a extensão no navegador
+2. No ***Canvas***, seguir para alguma matéria:
+   1. via _Notas_
+   2. via _Testes_
+3. Clicar no botão verde, adicionado pela extensão
+4. Após à execução, _Imprimir_ no navegador como `.pdf`
+
+## Imagens dos botões e os resultados
+### Gabarito de avaliações já concluídas
+![gabaritos](https://raw.githubusercontent.com/println/chrome-extension-bypass/master/.doc/avaliacoes-concluidas.png)
+
+### Extrair avaliação em execução
+![avaliação](https://raw.githubusercontent.com/println/chrome-extension-bypass/master/.doc/avaliacoes-em-execucao.png)
+
 
 ## Compatiblidade
 * Chrome
@@ -23,19 +39,14 @@ O **Canvas Print Preparer** prepara testes e provas para impressão com as segui
 
 * Manipulação de `tags` HTML em:
   * `*.instructure.com/courses/*/assignments/*/submissions/*`
+  * `*.instructure.com/courses/*/quizzes/*/take`
   * `*.instructure.com/courses/*/quizzes/*`
 * Adiciona um botão para remover dados pessoais (anonimizar) e cabeçalho dos testes e provas
 
 ***
-## Instalação e Utilização
+## Instalação manual
 
-A utilização da extensão é simples. Basta instalar, navegar até o teste/prova e acionar o **botão verde** para anonimizar o conteúdo, deixando apenas as questões.
-
-> ### Via Testes
-> ![Via Testes/Provas](https://raw.githubusercontent.com/println/chrome-extension-bypass/master/.doc/via-testes.png)
-
-> ### Via Notas
-> ![Via Notas](https://raw.githubusercontent.com/println/chrome-extension-bypass/master/.doc/via-notas.png)
+É possível instalar a extensão manualmente no `Firefox` ou no `Chrome`
 
 ### Como instalar a extensão
 A instalação recomendada é via `modo desenvolvedor` do navegador, mas é possível usar o binário do Chrome ou Firefox(via loja ou instalado manualmente).
